@@ -2,6 +2,7 @@ import bola
 import quadrado
 import funcionario
 import retangulo
+import bomba_combustivel as bomba
 
 print('ex 1\n')
 
@@ -48,3 +49,34 @@ retangulo1.menu()
 retangulo1.menu()
 
 retangulo1.menu()
+
+print('\n=====================================\nex 6\n')
+
+bomba1=bomba.BOMBA_COMBUSTIVEL('gasolina', 5.7, 1000)
+
+bomba1.abastece_litro()
+
+print('sobrou '+str(bomba1.quantidade))
+
+bomba1.abastece_valor()
+
+print('sobrou '+str(bomba1.quantidade))
+
+bomba1.muda_valor()
+
+bomba1.muda_quantidade()
+
+print(bomba1.quantidade)
+print(bomba1.valor)
+
+bomba1.abastece_valor()
+
+bomba1.muda_quantidade()
+
+bomba1.abastece_litro()
+
+print(bomba1.tipo)
+
+bomba1.muda_combustivel()
+
+print(bomba1.tipo)
